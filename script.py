@@ -83,7 +83,7 @@ def init_parser():
     parser.add_argument('-u', '--udp', help='list of open UDP ports',
                         action='store_true')
     parser.add_argument('-p', '--ports', nargs=2, help='ports range',
-                        default=[0, 100])
+                        metavar=('begin', 'end'), default=[0, 100])
 
     return parser
 
